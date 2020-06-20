@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Website of 4th Bn. CAF Mana Raipur</title>
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+    <meta charset="utf-8">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="body guard,business,emergency,fire department,Fire Fighters,officer, police,police department, protection,safety,security,visual composer,volunteer" />
+    <meta name="author" content="BDEXPERT" />
+    <!--====== TITLE TAG ======-->
+    <!--====== STYLESHEETS ======-->
+    <link rel="stylesheet" href="~/css/normalize.css">
+    <link rel="stylesheet" href="~/css/owl.carousel.css">
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/touchTouch/touchTouch.css">
+    <link href="~/css/plugin.css" rel="stylesheet">
+    <!--======= FAVICON ========-->
+    <link rel="shortcut icon" type="image/ico" href="~/images/govtlogo/cgpolice.png" />
+    <!--====== MAIN STYLESHEET ======-->
+    <link href="~/style.css" rel="stylesheet">
+    <link href="~/css/responsive.css" rel="stylesheet">
+    <!--======= MODERNIZR JS ========-->
+    <script src="~/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    @*---------------For Disable Right Click on Website for Inspect Element----------------------*@
+    @*oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;"*@
+
+
+    <style>
+        .dropdown {
+            position: inherit;
+            display: inherit;
+            margin-top: 29px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #39b9ea;
+            min-width: 100px;
+            box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 6px 10px;
+                text-decoration: none;
+                display: block;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #4d4848;
+        }
+    </style>
+
+
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+    <!-- HEADER-AREA-START-->
+    <header class="header-area">
+        <!-- HEADER-TOP-AREA-START -->
+
+        <div class="header-top-bar">
+            <div class="container">
+
+
+
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <div class="logo">
+                            <a href="https://www.cgstate.gov.in" title="CG Govt" target="_blank">
+                                <!-- LOGO-IMAGE -->
+                                <img src="~/images/govtlogo/cggovt.png" alt="CgGovt" style="height:100px;width:100px" />
+                                @*<img src="images/logo.png" alt="police">*@
+                                <small>Government of Chhattisgarh</small>
+                            </a><br />
+                            <span><b>4TH BN CAF,&nbsp; Mana,&nbsp; Raipur,&nbsp; Chhattisgarh</b></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="logo">
+                            <a href="https://www.cgpolice.gov.in/" title="CG Police" target="_blank">
+                                <!-- LOGO-IMAGE -->
+                                <img src="~/images/govtlogo/cgpolice.png" alt="Police" style="height:100px;width:100px" />
+                                @*<img src="images/logo.png" alt="police">*@
+                                <small>CG Police</small>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="logo">
+                            <a href="https://www.digitalindia.gov.in" title="Digital India" target="_blank">
+                                <!-- LOGO-IMAGE -->
+                                <img src="~/images/govtlogo/digitalindia.png" alt="digindia" style="height:100px;width:200px" />
+                                @*<img src="images/logo.png" alt="police">*@
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-12">
+                        <div class="logo">
+                            <a href="https://swachhbharat.mygov.in/" title="Clean India" target="_blank">
+                                <!-- LOGO-IMAGE -->
+                                <img src="~/images/govtlogo/cleenindia.png" alt="clnindia" style="height:100px;width:200px" />
+                                @*<img src="images/logo.png" alt="police">*@
+                            </a>
+                        </div>
+                    </div>
+                    @*<div class="col-sm-8 xs-none text-right">
+                            <div class="contact-info">
+                                <div class="phone">
+                                    <a href="callto:+18002345678" title="+1 800 234 5678"><i class="fa fa-phone"></i>+1 800 234 5678</a>
+                                </div>
+                                <div class="email">
+                                    <a href="mailto:info@police.com" title="info@police.com"><i class="fa fa-envelope"></i>info@police.com</a>
+                                </div>
+                            </div>
+                        </div>*@
+
+                    <span style="float:right;margin-top:-20px;">
+                        <div class="dropdown">
+                            <a href="@Url.Action("Index","Home")">English</a>
+                            <div class="dropdown-content">
+                                <a href="@Url.Action("Index", "HomeHN")" style="font-weight:bold;color:white">हिन्दी </a>
+
+                            </div>
+                        </div>
+                    </span>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MAINMENU-AREA-START -->
+
+        @*<div class="mainmenu-area">
+            <div class="container">
+                <div class="row">
+                    <div class="mainmenu">
+                        <div class="col-xs-12">
+                            <nav class="navbar" id="navbar-example2">
+                                <div class="navbar-header">
+                                    <button class="collapsed navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+                                    <ul class="nav navbar-nav">
+                                        <li class="active"><a href="@Url.Action("Index","Home")" title="Home">HOME</a></li>
+                                        <li><a href="@Url.Action("ActsandRules", "Home")" title="Acts and Rules ">Acts and Rules </a></li>
+                                        <li><a href="@Url.Action("Gallery", "Home")" title="Photo Gallery">Photo Gallery</a></li>
+                                        <li><a href="@Url.Action("Contact", "Home")" title="Contact">Contact</a></li>
+                                        <li><a href="@Url.Action("WebsitePolicies", "Home")" title="Website Policies">Website Policies </a></li>
+                                        <li>
+                                            <a href="@Url.Action("Downloads", "Home")" title="Downloads">Downloads</a>
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("Login", "Account")" title="Login" style="margin-left:140px;"><i class="fa fa-sign-in"></i> &nbsp; Login</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+        <!-- MAINMENU-AREA-END -->
+        <!-- HEADER-TOP-AREA-END -->
+
+
+    </header>
+    <!-- HEADER-AREA-END -->
+    <div>
+        @RenderBody()
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <!-- FOOTER-AREA-START -->
+    <footer class="footer-area section-padding">
+        <div class="container">
+            <div class="row">
+                <!-- SINGLE-FOOTER-START -->
+                <div class="col-xs-12 col-sm-8 col-md-4  wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="single-footer">
+                        <h3>About <span>Battalion</span></h3>
+                        <p>
+                            This battalion was established on 03rd May 2001 as the India Reserve Battalion for effective prevention of peace and Naxalism, Terrorist activities in the state.
+                        </p>
+                        <div class="social-list">
+                            <a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" data-toggle="tooltip" title="Google plus"><i class="fa fa-google-plus"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- SINGLE-FOOTER-END -->
+                <!-- SINGLE-FOOTER-START -->
+                <div class="col-xs-12 col-sm-4 col-md-4  wow fadeInLeft" data-wow-delay="0.6s">
+                    <div class="single-footer">
+                        <h3>Link</h3>
+                        <div class="link">
+                            <ul>
+                                <li><a href="@Url.Action("Index","Home")" title="Home">Home</a></li>
+                                <li><a href="@Url.Action("ActsandRules","Home")" title="Acts And Rules">Acts And Rules</a></li>
+                                <li><a href="@Url.Action("Gallery", "Home")" title="Gallery">Gallery</a></li>
+                                <li><a href="@Url.Action("WebsitePolicies","Home")" title="Website Policies">Website Policies</a></li>
+                                <li><a href="@Url.Action("Downloads","Home")" title="Downloads">Downloads</a></li>
+                                <li><a href="@Url.Action("Contact", "Home")" title="Contact Us">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- SINGLE-FOOTER-END -->
+                <!-- SINGLE-FOOTER-START -->
+                <!-- SINGLE-FOOTER-END -->
+                <!-- SINGLE-FOOTER-START -->
+                <div class="col-xs-12 col-sm-6 col-md-4  wow fadeInLeft" data-wow-delay="1.2s">
+                    <div class="single-footer">
+                        <h3>Info contact</h3>
+                        <div class="single-info">
+                            <a href="#"><span><i class="fa fa-globe"></i></span>4th Bn CAF, Mana Camp, Raipur, 492015</a>
+                        </div>
+                        <div class="single-info">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=co4thbn-mana.cg@gov.in" target="_blank"><span><i class="fa fa-envelope"></i></span>co4thbn-mana.cg@gov.in</a>
+                        </div>
+                        <div class="single-info">
+                            <a href="#"><span><i class="fa fa-phone"></i></span>0771-2418079</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br /><br /><br />
+            <center>  Copyright © 2019 - All Rights Reserved by - Commandant,&nbsp; 4Th Battalion Chhattisgarh Armed Force,&nbsp; Mana Camp, District-Raipur,&nbsp; Chhatisgarh</center>
+            <center>Developed By - <a href="http://www.awizomtech.com/" target="_blank">Awizom Tech Bytes Pvt. Ltd. Raipur</a></center>
+
+            @*<div align=center>
+                <span style="color:red">Total Visitors</span>   :  <img src='https://www.counter12.com/img-xD1DaxycYd5B1wx7-9.gif' border='0' alt='conter11' style="height:15px;">
+                 </div>*@
+
+    </footer>
+    <!-- FOOTER-AREA-END -->
+</body>
+</html>
+<!--=======  SCRIPTS =======-->
+<script src="~/js/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="~/js/vendor/bootstrap.min.js" type="text/javascript"></script>
+<!--=======  PLUGINS =======-->
+<script src="~/js/jquery.circlechart.js"></script>
+<script src="~/js/owl.carousel.min.js" type="text/javascript"></script>
+<script src="~/touchTouch/touchTouch.jquery.js" type="text/javascript"></script>
+<script src="~/js/scrollUp.min.js" type="text/javascript"></script>
+<script src="~/js/plugin.js" type="text/javascript"></script>
+<!--=======  ACTIVE JS =======-->
+<script src="~/js/main.js" type="text/javascript"></script>
+
+
+@*<script type='text/javascript' src='https://www.counter12.com/ad.js?id=2bCaaZYdZZ8wZACZ'></script>*@
+
+

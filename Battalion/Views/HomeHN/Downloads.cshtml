@@ -1,0 +1,105 @@
+﻿@model Battalion.Models.Downloads
+@using Battalion.Models;
+@using Battalion.DAL
+@{
+    ViewBag.Title = "Downloads";
+    Layout = "~/Views/Shared/_LayoutHN.cshtml";
+    List<Downloads> download = ViewData["Downloads"] as List<Downloads>;
+}
+<div class="mainmenu-area">
+    <div class="container">
+        <div class="row">
+            <div class="mainmenu">
+                <div class="col-xs-12">
+                    <nav class="navbar" id="navbar-example2">
+                        <div class="navbar-header">
+                            <button class="collapsed navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+                            <ul class="nav navbar-nav">
+                                <li><a href="@Url.Action("Index","HomeHN")" title="होम">होम</a></li>
+                                <li><a href="@Url.Action("ActsandRules", "HomeHN")" title="नियम अधिनियम">नियम अधिनियम</a></li>
+                                <li><a href="@Url.Action("Gallery", "HomeHN")" title="फोटो गैलेरी">फोटो गैलेरी</a></li>
+                                <li><a href="@Url.Action("Contact", "HomeHN")" title="संपर्क">संपर्क</a></li>
+                                <li ><a href="@Url.Action("WebsitePolicies", "HomeHN")" title="वेबसाइट नीति">वेबसाइट नीति</a></li>
+                                <li class="active">
+                                    <a href="@Url.Action("Downloads", "HomeHN")" title="डाउनलोड">डाउनलोड </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="blog-area section-padding" style="background-color:#e9e7e7">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-12  wow fadeIn" data-wow-delay="0.3s" style="margin-top:-60px;">
+                <div class="sinlge-blog">
+
+                    <a href="#" title="we call of thieves">
+                        <h4>डाउन-लोड्स  :</h4>
+                    </a>
+
+                    <div class="meta-content">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+
+                                <thead>
+
+                                </thead>
+                                <tbody>
+
+
+                                    <tr>
+                                        <td class="style25">
+                                            <a href="~/Documents/Medical%20certificate.pdf" target="_blank">
+                                                <span class="style38">मेडिकल सर्टिफिकेट</span>
+                                            </a>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td class="style25">
+                                            <a href="~/Documents/Earned%20Leave.pdf" target="_blank">
+                                                <span class="style38">अर्जित अवकाश फार्म</span>
+                                            </a>
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td class="style25">
+                                            <a href="~/Documents/House%20rent.pdf" target="_blank">
+                                                <span class="style38">मकान किराया फार्म</span>
+                                            </a>
+                                        </td>
+
+                                    </tr>
+
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "General";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="mainmenu-area">
+    <div class="container">
+        <div class="row">
+            <div class="mainmenu">
+                <div class="col-xs-12">
+                    <nav class="navbar" id="navbar-example2">
+                        <div class="navbar-header">
+                            <button class="collapsed navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="@Url.Action("Index","Home")" title="Home">HOME</a></li>
+                                <li><a href="@Url.Action("ActsandRules", "Home")" title="Acts and Rules ">Acts and Rules </a></li>
+                                <li><a href="@Url.Action("Gallery", "Home")" title="Photo Gallery">Photo Gallery</a></li>
+                                <li><a href="@Url.Action("Contact", "Home")" title="Contact">Contact</a></li>
+                                <li><a href="@Url.Action("WebsitePolicies", "Home")" title="Website Policies">Website Policies </a></li>
+                                <li>
+                                    <a href="@Url.Action("Downloads", "Home")" title="Downloads">Downloads</a>
+                                </li>
+                               
+                            </ul>
+
+                        </div>
+
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="about-area" style="margin-top:15px;">
+
+    <div class="container">
+
+        <div class="row wow fadeIn">
+            <div class="col-xs-12 text-center">
+                <div class="page-title">
+                    <h2 style="color:#0b2df8">General</h2>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 wow fadeInRight" data-wow-delay="0.6s" style="margin-top:-25px;">
+                <div class="about-text">
+                    <p style="text-align:justify">
+                        4Th Battalion Chhattisgarh Armed Force Mana Raipur  is managing the content of the website.<br />
+                        Though all efforts have been made to ensure the accuracy and currency of the content on this website,
+                        the same should not be construed as a statement of law or used for any legal purposes.<br />
+                        In no event will the 4th Battalion Chhattisgarh Armed Force be liable for any expense, loss or damage including,
+                        without limitation, indirect or consequential loss or damage, or any expense, loss or damage whatsoever arising
+                        from use, or loss of use, of data, arising out of or in connection with the use of this Portal.<br />
+                        Links to other websites that have been included on this Portal are provided for public convenience only.
+                        We cannot guarantee the availability of such linked pages at all times.<br />
+                        These terms and conditions shall be governed by and construed in accordance with the Indian Laws.
+                        Any dispute arising under these terms and conditions shall be subject to the exclusive jurisdiction of the courts of India.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+

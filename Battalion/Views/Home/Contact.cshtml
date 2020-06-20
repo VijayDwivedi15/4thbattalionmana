@@ -1,0 +1,241 @@
+﻿@model Battalion.Models.UserContact
+@using Battalion.Models;
+@using Battalion.DAL
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<UserContact> contact = ViewData["UserContact"] as List<UserContact>;
+    List<Contact> maincontact = ViewData["Contact"] as List<Contact>;
+}
+
+<div class="mainmenu-area">
+    <div class="container">
+        <div class="row">
+            <div class="mainmenu">
+                <div class="col-xs-12">
+                    <nav class="navbar" id="navbar-example2">
+                        <div class="navbar-header">
+                            <button class="collapsed navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+                            <ul class="nav navbar-nav">
+                                <li><a href="@Url.Action("Index","Home")" title="Home">HOME</a></li>
+                                <li><a href="@Url.Action("ActsandRules", "Home")" title="Acts and Rules ">Acts and Rules </a></li>
+                                <li><a href="@Url.Action("Gallery", "Home")" title="Photo Gallery">Photo Gallery</a></li>
+                                <li class="active"><a href="@Url.Action("Contact", "Home")" title="Contact">Contact</a></li>
+                                <li><a href="@Url.Action("WebsitePolicies", "Home")" title="Website Policies">Website Policies </a></li>
+                                <li>
+                                    <a href="@Url.Action("Downloads", "Home")" title="Downloads">Downloads</a>
+                                </li>
+                               
+                            </ul>
+
+                        </div>
+
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="contact-page">
+    <!-- HEADER-TEXT-SLIDE-START -->
+    <div class="header-text-area">
+        <div class="header-text text-center">
+            <div class="header-bg"></div>
+            <div class="sub-header-text header-single-text">
+                <h2>Contact us</h2>
+                <ul>
+                    <li style="text-decoration:none">Home</li>
+                    <li><i class="fa fa-angle-right"></i></li>
+                    <li class="active">Contact Us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- HEADER-TEXT-SLIDE-END-->
+    <!-- CONTACT-AREA-START -->
+    <div class="contact-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <div class="page-title">
+                        <h2>IF YOU NEED SOME PLEASE WRITE A CONTACT</h2>
+                    </div>
+                </div>
+                <span id="lblError" style="color: red;margin-left:30px;"></span>
+                @*<div class="col-xs-12 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="contact-form">
+                        @using (Html.BeginForm("Contact", "Home", FormMethod.Post, new { enctype = "multipart/form-data", id = "Contact", role = "form" }))
+                        {
+                            <form action="" id="contact-form" method="post">
+                                <input type="text" id="Name" name="Name" placeholder="Name" required>
+                                <input type="email" id="Email" name="Email" placeholder="Email" required>
+                                <input type="text" id="Subject" name="Subject" placeholder="Subject" required>
+                                <textarea rows="6" id="Message" name="Message" placeholder="Message" required></textarea>
+
+                                <input type="submit" value="Submit" id="contact" class="btn btn-primary waves-effect" style="width:130px;" />
+
+                            </form>
+                        }
+                    </div>
+                </div>*@
+
+                <div class="col-xs-12 col-sm-12 col-md-2 wow fadeIn" data-wow-delay="0.9s">
+
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-1 wow fadeIn" data-wow-delay="0.9s">
+
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6 wow fadeIn" data-wow-delay="0.9s">
+                        <address class="address blue-bg">
+                        <div class="single-info">
+                            <a href="#"><span><i class="fa fa-globe"></i></span>4th Bn CAF, Mana Camp, Raipur, 492015</a>
+                        </div>
+                        <div class="single-info">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=co4thbn-mana.cg@gov.in" target="_blank"><span><i class="fa fa-envelope"></i></span>co4thbn-mana.cg@gov.in</a>
+                        </div>
+                        <div class="single-info">
+                            <a href="#"><span><i class="fa fa-phone"></i></span> 0771 - 2418079</a>
+                        </div>
+                        <div class="social-list text-center">
+                            <a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" data-toggle="tooltip" title="Google plus"><i class="fa fa-google-plus"></i></a>
+                           
+                        </div>
+                    </address>
+                    
+                    <div class="address-title text-center">
+                        <h3>THANKS FOR VISITING OUR WEBSITE!!!</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@Html.Hidden("SaveStatus", ViewBag.status as string)
+@Html.Hidden("RedirectToHome", Url.Action("Contact", "Home", new { area = "" }))
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        //var tech = getUrlParameter('SaveStatus');
+        var tech = $("#SaveStatus").val();
+
+        if (tech == "Exists" || tech == "AllReadyUse") {
+            $.alert({
+                title: 'Sorry',
+                content: 'Data cannot be changed because already Exists',
+                confirmButton: 'OK',
+                confirmButtonClass: 'btn-info',
+                icon: 'icon-thumbs-down icon-2x ',
+                animation: 'zoom',
+                confirm: function () {
+                }
+            });
+        }
+        else
+            if (tech == "AllReadyUse") {
+                $.alert({
+                    title: 'Sorry',
+                    content: 'Data cannot be changed because reference already used',
+                    confirmButton: 'OK',
+                    confirmButtonClass: 'btn-info',
+                    icon: 'icon-thumbs-down icon-2x ',
+                    animation: 'zoom',
+                    confirm: function () {
+                    }
+                });
+            } else
+                if (tech == "Deleted") {
+                    $.alert({
+                        title: 'Cheers',
+                        content: 'Data deleted successfully',
+                        confirmButton: 'OK',
+                        confirmButtonClass: 'btn-info',
+                        icon: 'icon-thumbs-down icon-2x ',
+                        animation: 'zoom',
+                        confirm: function () {
+                        }
+                    });
+                }
+                else
+                    if (tech == "swr") {
+                        $.alert({
+                            title: 'Sorry',
+                            content: 'Something went wrong',
+                            confirmButton: 'OK',
+                            confirmButtonClass: 'btn-info',
+                            icon: 'icon-thumbs-down icon-2x ',
+                            animation: 'zoom',
+                            confirm: function () {
+                            }
+                        });
+                    }
+    });
+
+
+
+
+</script>
+
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#Name").keypress(function (e) {
+            var keyCode = e.keyCode || e.which;
+
+            $("#lblError").html("");
+
+            //Regex for Valid Characters i.e. Alphabets and Numbers.
+            var regex = /^[A-Za-z\. ]+$/;
+
+            //Validate TextBox value against the Regex.
+            var isValid = regex.test(String.fromCharCode(keyCode));
+            if (!isValid) {
+                $("#lblError").html("Only Alphabets are allowed for Name.");
+            }
+
+            return isValid;
+        });
+    });
+
+
+    $(function () {
+        $("#Subject").keypress(function (e) {
+            var keyCode = e.keyCode || e.which;
+
+            $("#lblError").html("");
+
+            //Regex for Valid Characters i.e. Alphabets and Numbers.
+            var regex = /^[A-Za-z\. ]+$/;
+
+            //Validate TextBox value against the Regex.
+            var isValid = regex.test(String.fromCharCode(keyCode));
+            if (!isValid) {
+                $("#lblError").html("Only Alphabets are allowed For Subject.");
+            }
+
+            return isValid;
+        });
+    });
+
+
+
+
+
+</script>

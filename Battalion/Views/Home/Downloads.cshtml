@@ -1,0 +1,108 @@
+﻿@model Battalion.Models.Downloads
+@using Battalion.Models;
+@using Battalion.DAL
+@{
+    ViewBag.Title = "Downloads";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<Downloads> download = ViewData["Downloads"] as List<Downloads>;
+
+}
+<div class="mainmenu-area">
+    <div class="container">
+        <div class="row">
+            <div class="mainmenu">
+                <div class="col-xs-12">
+                    <nav class="navbar" id="navbar-example2">
+                        <div class="navbar-header">
+                            <button class="collapsed navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+                            <ul class="nav navbar-nav">
+                                <li><a href="@Url.Action("Index","Home")" title="Home">HOME</a></li>
+                                <li><a href="@Url.Action("ActsandRules", "Home")" title="Acts and Rules ">Acts and Rules </a></li>
+                                <li><a href="@Url.Action("Gallery", "Home")" title="Photo Gallery">Photo Gallery</a></li>
+                                <li><a href="@Url.Action("Contact", "Home")" title="Contact">Contact</a></li>
+                                <li><a href="@Url.Action("WebsitePolicies", "Home")" title="Website Policies">Website Policies </a></li>
+                                <li class="active">
+                                    <a href="@Url.Action("Downloads", "Home")" title="Downloads">Downloads</a>
+                                </li>
+                              
+                            </ul>
+
+                        </div>
+
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="blog-area section-padding" style="background-color:#e9e7e7">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-12  wow fadeIn" data-wow-delay="0.3s" style="margin-top:-60px;">
+                <div class="sinlge-blog">
+
+                    <a href="#" title="we call of thieves">
+                        <h4>Downloads :</h4>
+                    </a>
+
+                    <div class="meta-content">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+
+                                </thead>
+                                <tbody>
+
+                                   
+                                        <tr>
+                                            <td class="style25">
+                                                <a href="~/Documents/Medical%20certificate.pdf" target="_blank">
+                                                    <span class="style38">Medical Certificate</span>
+                                                </a>
+                                            </td>
+
+                                        </tr>
+                                    <tr>
+                                      
+                                        <td class="style25">
+                                            <a href="~/Documents/Earned%20Leave.pdf" target="_blank">
+                                                <span class="style38">E.L. Form</span>
+                                            </a>
+                                        </td>
+                                        
+                                    </tr>
+                                   
+                                    <tr>
+                                        <td class="style25">
+                                            <a href="~/Documents/House%20rent.pdf" target="_blank">
+                                                <span class="style38">House Rent Form</span>
+                                            </a>
+                                        </td>
+
+                                    </tr>
+
+                                   
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+

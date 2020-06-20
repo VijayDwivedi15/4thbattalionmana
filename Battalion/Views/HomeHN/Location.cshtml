@@ -1,0 +1,108 @@
+﻿@{
+    ViewBag.Title = "Location";
+    Layout = "~/Views/Shared/_LayoutHN.cshtml";
+}
+
+<div class="mainmenu-area">
+    <div class="container">
+        <div class="row">
+            <div class="mainmenu">
+                <div class="col-xs-12">
+                    <nav class="navbar" id="navbar-example2">
+                        <div class="navbar-header">
+                            <button class="collapsed navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="@Url.Action("Index","HomeHN")" title="होम">होम</a></li>
+                                <li><a href="@Url.Action("ActsandRules", "HomeHN")" title="नियम अधिनियम">नियम अधिनियम</a></li>
+                                <li><a href="@Url.Action("Gallery", "HomeHN")" title="फोटो गैलेरी">फोटो गैलेरी</a></li>
+                                <li><a href="@Url.Action("Contact", "HomeHN")" title="संपर्क">संपर्क</a></li>
+                                <li><a href="@Url.Action("WebsitePolicies", "HomeHN")" title="वेबसाइट नीति">वेबसाइट नीति</a></li>
+                                <li>
+                                    <a href="@Url.Action("Downloads", "HomeHN")" title="डाउनलोड">डाउनलोड </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+<section class="blog-area blue-bg">
+    <div class="container" style="margin-top:-30px;">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <br />
+                <div class="page-title">
+                    <h2>कैसे पहुचें</h2>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4  wow fadeIn" data-wow-delay="0.3s">
+                <div class="sinlge-blog">
+
+                    <a href="#" title="we call of thieves">
+                        <h3>हवाई यात्रा</h3>
+                    </a>
+
+                    <div class="meta-content">
+                        <p style="text-align:justify">सबसे निकटतमस्वामी विवेकानंद हवाई अड्डा रायपुर है, जहा से वाहिनी की दुरी मात्र 2 किलोमीटर है |</p>
+                    </div>
+                </div>
+                <br />
+            </div>
+
+            <div class="col-xs-12 col-sm-4  wow fadeIn" data-wow-delay="0.3s">
+                <div class="sinlge-blog">
+
+                    <a href="#" title="we call of thieves">
+                        <h3>रेल यात्रा</h3>
+                    </a>
+
+                    <div class="meta-content">
+                        <p style="text-align:justify">रायपुर रेलवे स्टेशन से इसकी दुरी मात्र 15 किलोमीटर है , जिस तक पहुंचने के लिए  पब्लिक वाहन  उपलब्ध है |</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4  wow fadeIn" data-wow-delay="0.3s">
+                <div class="sinlge-blog">
+
+                    <a href="#" title="we call of thieves">
+                        <h3>सड़क यात्रा</h3>
+                    </a>
+
+                    <div class="meta-content">
+                        <p style="text-align:justify">वाहिनी तक सड़क मार्ग से पहुंचने के लिए सिटी बस , प्राइवेट बस , ऑटो सारे साधन आसानी से उपलब्ध है |</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<br />
+
+<div class="page-title">
+    <center>  <h2>Location Map</h2></center>
+</div>
+
+
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.107122853722!2d81.72641911424809!3d21.187903087703763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28c37a160d868f%3A0xf6bfed66af540b31!2sCOMMANDANT%204TH%20BN%20CAF!5e0!3m2!1sen!2sin!4v1568377824578!5m2!1sen!2sin" width="100%" height="380" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+</div>
+<br />

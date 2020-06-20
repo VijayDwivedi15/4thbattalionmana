@@ -1,0 +1,662 @@
+﻿@using Battalion.Models;
+@using Battalion.DAL
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_LayoutHN.cshtml";
+    List<Notice> notice = ViewData["Notice"] as List<Notice>;
+    List<WhatsNew> whatsnew = ViewData["WhatsNew"] as List<WhatsNew>;
+}
+<div class="mainmenu-area">
+    <div class="container">
+        <div class="row">
+            <div class="mainmenu">
+                <div class="col-xs-12">
+                    <nav class="navbar" id="navbar-example2">
+                        <div class="navbar-header">
+                            <button class="collapsed navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="@Url.Action("Index","HomeHN")" title="होम">होम</a></li>
+                                <li ><a href="@Url.Action("ActsandRules", "HomeHN")" title="नियम अधिनियम">नियम अधिनियम</a></li>
+                                <li><a href="@Url.Action("Gallery", "HomeHN")" title="फोटो गैलेरी">फोटो गैलेरी</a></li>
+                                <li><a href="@Url.Action("Contact", "HomeHN")" title="संपर्क">संपर्क</a></li>
+                                <li><a href="@Url.Action("WebsitePolicies", "HomeHN")" title="वेबसाइट नीति">वेबसाइट नीति</a></li>
+                                <li>
+                                    <a href="@Url.Action("Downloads", "HomeHN")" title="डाउनलोड">डाउनलोड </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<header class="header-area">
+    <div class="header-text-area">
+        <div class="header-text-carousel text-center">
+            <div class="header-text">
+                <div class="header-bg header-bg-1"></div>
+                <div class="header-single-text">
+                    @*<h1>welcome to<br /> 4th Battalion Mana </h1>*@
+                    @*<a href="#" class="btn default-button blue-btn" title="Read more">Read more</a>
+                        <a href="contact.html" class="btn default-button red-btn" title="Contact us">Contact us</a>*@
+                </div>
+            </div>
+            <div class="header-text">
+                <div class="header-bg header-bg-2"></div>
+                <div class="header-single-text">
+                    @*<h1>if you run you'll <br /> only die tired</h1>*@
+                    @*<a href="#" class="btn default-button blue-btn" title="Read more">Read more</a>
+                        <a href="contact.html" class="btn default-button red-btn" title="Contact us">Contact us</a>*@
+                </div>
+            </div>
+            <div class="header-text">
+                <div class="header-bg header-bg-3"></div>
+                <div class="header-single-text">
+                    @*<h1>Welcome to our  <br /> Battalion Website</h1>*@
+                    @*<a href="#" class="btn default-button blue-btn" title="Read more">Read more</a>
+                        <a href="contact.html" class="btn default-button red-btn" title="Contact us">Contact us</a>*@
+                </div>
+            </div>
+
+            <div class="header-text">
+                <div class="header-bg header-bg-4"></div>
+                <div class="header-single-text">
+                    @*<h1>Welcome to our  <br /> Battalion Website</h1>*@
+                    @*<a href="#" class="btn default-button blue-btn" title="Read more">Read more</a>
+                        <a href="contact.html" class="btn default-button red-btn" title="Contact us">Contact us</a>*@
+                </div>
+            </div>
+
+            <div class="header-text">
+                <div class="header-bg header-bg-5"></div>
+                <div class="header-single-text">
+                    @*<h1>Welcome to our  <br /> Battalion Website</h1>*@
+                    @*<a href="#" class="btn default-button blue-btn" title="Read more">Read more</a>
+                        <a href="contact.html" class="btn default-button red-btn" title="Contact us">Contact us</a>*@
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="about-area">
+
+    <div class="container" style="margin-top:30px;">
+        <div class="row  wow fadeIn">
+            <div class="col-xs-12 text-center">
+                <div class="page-title">
+                    <h2>वाहनी के बारे में</h2>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 wow fadeInLeft" data-wow-delay="0.6s">
+                <div class="about-image-slide">
+
+                    <img src="~/images/manacamp.jpg" alt="">
+                    <img src="~/images/bg1.jpg" style="height:500px;" alt="">
+
+
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-8 wow fadeInRight" data-wow-delay="0.6s">
+                <div class="about-text">
+                    <p style="text-align:justify">
+
+                        एकीकृत मध्य प्रदेश राज्य की आंतरिक कानून व्यवस्था में बल की कमी को पूरा करने के अभिप्राय से मध्य प्रदेश पुलिस बल के अंतर्गत 22वीं वाहिनी विशेष सशस्त्र बल की स्वीकृति मध्य प्रदेश
+                        शासन गृह पुलिस विभाग के आदेश क्रमांक-म.प्र. शासन/गृह/पुलिस/4256-3628/II-B (III) भोपाल दिनांक 24.11.1966 तथा पुलिस मुख्यालय भोपाल का आदेश क्रमांक - पु.मु./IV/1644/66,
+                        दि. 01.12.1966 को राजधानी स्थित भोपाल के आलोक में 01 नवंबर 1966 को इस इकाई का गठन किया गया तथा राज्य शासन के आदेश क्रमांक - 3279-2-B (13), भोपाल दिनांक 07.12.1971
+                        के अनुसार इस इकाई को 01.11.1971 से (India Reserve) वाहिनी घोषित किया गया।
+                    </p>
+                    <p style="text-align:justify">
+                        08 अक्टूबर 1992 को असम राज्य से इस इकाई का मुख्यालय तथा 04 कंपनियॉ प्रति नियुक्ति से वापसी पश्चात 12 अक्टूबर 1992 को माना-कैम्प, जिला-रायपुर एकीकृत म.प्र. में स्थापित हुई।
+                        पृथक छ.ग. राज्य होने के पश्चात 01 नवंबर 2000 को म.प्र. से पृथक होकर राज्य शासन के आदेश क्रमांक-एफ-3-7/गृह/2001 रायपुर, दिनांक 03.05.2001 के तहत इस इकाई का क्रम
+                        से नामांतरण करते हुए 4थी वाहिनी छत्तीसगढ़ सशस्त्र बल माना, रायपुर किया गया है।
+                    </p>
+
+                    <p style="text-align:justify">
+                        इस वाहिनी की <b>‘ए’</b> कंपनी वर्ष 1992 से उसूर, बिलासपुर, सल्हेवारा, कांकेर, अंतागढ, कोरबा, रायपुर, ओरछा, परपा.
+                        <br /> <b>‘बी’</b> कंपनी-पीटीसीबोरगांव, बीजापुर, दर्री,
+                        अंतागढ़, रामगढ़, महासमुंद, नगरी, रूद्री, सिहावा.
+                        <br /> <b>‘सी’</b> कंपनी-भोपाल, चिन्तलनार, दल्लीराजहरा, डोंगरगढ़, मानपुर, रायपुर, राजनांदगांव, भोपाल, पखांजूर,
+                        कांकेर, सुकमा, महासमुंद, रामगढ़, जगदलपुर.
+                        <br /> <b>'डी'</b> कंपनी-गोलापल्ली, रायपुर, राजनंदगांव, चिचोला, साल्हेवारा, अंतागढ़, पखांजूर, ओरछा, रायपुर, बयानार.
+                        <br />
+                        <b>‘ई’</b> कंपनी-पीटीसीबोरगांव, सुकमा, पखांजूर, नारायणपुर, राणापाल, फरसगांव.<br />
+                        <b>‘एफ’</b> कंपनी-सुकमा, बिलासपुर, दुर्ग, जशपुर, साल्हेवारा, पु.मु. रायपुर, नारायणपुर में तैनात रही।
+                    </p>
+
+                    <a href="@Url.Action("History", "HomeHN")" class="btn default-button blue-btn">अधिक + <span><i class="fa fa-angle-double-right"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ABOUT-AREA-END -->
+<!-- TEAM-AREA-START -->
+<section class="team-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <div class="page-title">
+                    <h2>अधिकारी</h2><hr />
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3  wow fadeInUp" data-wow-delay="0.3s">
+                <div class="single-team">
+                    <img src="~/images/c1.JPG" style="width:270px;height:276px" />
+
+                    <div class="team-details">
+                        <h3>
+                            श्री रामकृष्ण साहू
+                            <small style="color:white">
+                                <b>
+                                    आई.पी.एस
+                                    <br />सेनानी 
+                                </b>
+                            </small>
+                        </h3>
+                        @*<div class="team-social-list">
+                                <a href="#" title="Facebook Link"><i class="fa fa-facebook"></i></a>
+                                <a href="#" title="Twitter Link"><i class="fa fa-twitter"></i></a>
+                                <a href="#" title="Google Plus Link"><i class="fa fa-google-plus"></i></a>
+                                <a href="#" title="Linkedin Link"><i class="fa fa-linkedin"></i></a>
+                            </div>*@
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3  wow fadeInUp" data-wow-delay="0.3s">
+                <div class="single-team">
+                    <img src="~/images/c4.jpeg" style="width:270px;height:276px" />
+                    <div class="team-details">
+                        <h3>
+                            श्री हरीश यादव <br />
+                            <small style="color:white">
+                                <b>
+                                    उप-सेनानी 
+
+                                </b>
+                            </small>
+                        </h3>
+                        @*<div class="team-social-list">
+                                <a href="#" title="Facebook Link"><i class="fa fa-facebook"></i></a>
+                                <a href="#" title="Twitter Link"><i class="fa fa-twitter"></i></a>
+                                <a href="#" title="Google Plus Link"><i class="fa fa-google-plus"></i></a>
+                                <a href="#" title="Linkedin Link"><i class="fa fa-linkedin"></i></a>
+                            </div>*@
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3  wow fadeInUp" data-wow-delay="0.6s">
+                <div class="single-team">
+                    <img src="~/images/c22.jpg" style="width: 270px; height: 276px; " />
+
+                    <div class="team-details">
+                        <h3>
+                            श्री डी.एन.सिंह<br />
+                            <small style="color:white">
+                                <b>
+                                    सहायक - सेनानी 
+                                </b>
+                            </small>
+                        </h3>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3  wow fadeInUp" data-wow-delay="0.6s">
+                <div class="single-team">
+                    <img src="~/images/c33.jpg" style="width: 270px; height: 276px;" />
+                    <div class="team-details">
+                        <h3>
+                            श्री असद खान<br />
+                            <small style="color:white">
+                                <b>
+                                    सहायक - सेनानी 
+                                </b>
+                                <b></b>
+                            </small>
+                        </h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- TEAM-AREA-END -->
+<!-- BLOG-AREA-START -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="blog-area blue-bg section-padding">
+    <div class="container" style="margin-top:-30px;">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <div class="page-title">
+                    <h2>लिंक</h2>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4  wow fadeIn" data-wow-delay="0.3s">
+                <div class="sinlge-blog">
+
+                    <a href="#" title="we call of thieves">
+                        <h3>जनरल प्रोफाइल</h3>
+                    </a>
+
+                    <div class="meta-content">
+                        <ul>
+                            <li class="views-row views-row-1 views-row-odd views-row-first">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="@Url.Action("General","HomeHN")" target="_blank">
+                                            <span class="style38">सामान्य</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="views-row views-row-5 views-row-odd">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="@Url.Action("Location","HomeHN")" target="_blank" class="style38">कैसे पहुंचे?</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="views-row views-row-6 views-row-even">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="@Url.Action("History","HomeHN")" target="_blank" class="style38">इतिहास</a><span class="style38">&nbsp;&nbsp;&nbsp; </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="views-row views-row-6 views-row-even">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="@Url.Action("CompanyDeployment","HomeHN")" target="_blank" class="style38">कम्पनियों की पदस्थापना</a><span class="style38">&nbsp;&nbsp;&nbsp; </span>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <br /><br /><br /><br /><br />
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4  wow fadeIn" data-wow-delay="0.3s">
+                <div class="sinlge-blog">
+
+                    <a href="#" title="we call of thieves">
+                        <h3>अन्य जानकारियां</h3>
+                    </a>
+
+                    <div class="meta-content">
+                        <ul>
+                            <li class="views-row views-row-1 views-row-odd views-row-first">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="@Url.Action("CommandantList","HomeHN")" target="_blank">
+                                            <span class="style38">सेनानियों की सूची </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="views-row views-row-5 views-row-odd">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="@Url.Action("MedalHolders","HomeHN")" target="_blank" class="style38">(IPM/PPM)पदकधारी</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="views-row views-row-6 views-row-even">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="@Url.Action("DistrictPoliceRaipur","HomeHN")" target="_blank" class="style38"> ज़िला पुलिस बल,रायपुर </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="views-row views-row-6 views-row-even">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="@Url.Action("Martyrs","HomeHN")" target="_blank" class="style38">शहीद</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="views-row views-row-6 views-row-even">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="@Url.Action("CGBatalionDetail","HomeHN")" target="_blank" class="style38">छतीसगढ़ शस्त्र बल निर्देशिका </a><span class="style38">&nbsp;&nbsp;&nbsp; </span>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                        <br /><br /><br /><br />
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4  wow fadeIn" data-wow-delay="0.3s">
+                <div class="sinlge-blog">
+
+                    <a href="#" title="we call of thieves">
+                        <h3>महत्वपूर्ण लिंक</h3>
+                    </a>
+
+                    <div class="meta-content">
+                        <ul>
+                            <li class="views-row views-row-1 views-row-odd views-row-first">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="https://www.india.gov.in/" target="_blank">
+                                            <span class="style38">भारत सरकार का पोर्टल</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="views-row views-row-5 views-row-odd">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="https://cgstate.gov.in/" class="style38" target="_blank">छत्तीसगढ़ शासन</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="views-row views-row-6 views-row-even">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="http://www.cgpolice.gov.in/" class="style38" target="_blank">छत्तसीगढ़ पुलिस</a><span class="style38">&nbsp;&nbsp;&nbsp; </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="views-row views-row-6 views-row-even">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="http://ncrb.gov.in//" class="style38" target="_blank">राष्ट्रीय अपराध रिकॉर्ड ब्यूरो</a><span class="style38">&nbsp;&nbsp;&nbsp; </span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="views-row views-row-6 views-row-even">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="https://parichay.nic.in/Accounts/index.jsp?service=SPARROWIPS" target="_blank" class="style38">ई-ऑफिस(स्पेरो) भारतीय पुलिस सेवा के अधिकारीयों के लिये</a><span class="style38">&nbsp;&nbsp;&nbsp; </span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="views-row views-row-6 views-row-even">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="https://www.incometaxindiaefiling.gov.in/home" target="_blank" class="style38">(ई-फाइलिंग)आयकर विभाग</a><span class="style38">&nbsp;&nbsp;&nbsp; </span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="views-row views-row-6 views-row-even">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="https://ekoshonline.cg.nic.in/" target="_blank" class="style38">ई-कोषऑनलाइन</a><span class="style38">&nbsp;&nbsp;&nbsp; </span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="views-row views-row-6 views-row-even">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="https://cgpension.nic.in/" target="_blank" class="style38">ऑनलाइन पेंशन मैनेजमेंट सिस्टम</a><span class="style38">&nbsp;&nbsp;&nbsp; </span>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<br />
+
+<!-- CLIENTS-AREA-START -->
+<section class="client-area section-padding">
+    <div class="container">
+        <div class="row" style="margin-top:-60px;">
+            <div class="col-xs-12 text-center">
+                <div class="page-title">
+                    <h2>कम्पनियों की पदस्थापना</h2>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 col-sm-4  wow fadeInLeft" data-wow-delay="0.5s">
+                <div class="clients-text">
+                    <img src="~/images/govtlogo/cgpolice.png" style="margin-top:-30px;" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8 col-sm-8  wow fadeInRight" data-wow-delay="0.5s">
+                <div class="clients-text">
+                    <p style="text-align:justify">
+                        इस वाहिनी की <b>‘ए’</b> कंपनी वर्ष 1992 से उसूर, बिलासपुर, सल्हेवारा, कांकेर, अंतागढ, कोरबा, रायपुर, ओरछा, परपा.
+                        <br /> <b>‘बी’</b> कंपनी-पीटीसीबोरगांव, बीजापुर, दर्री,
+                        अंतागढ़, रामगढ़, महासमुंद, नगरी, रूद्री, सिहावा.
+                        <br /> <b>‘सी’</b> कंपनी-भोपाल, चिन्तलनार, दल्लीराजहरा, डोंगरगढ़, मानपुर, रायपुर, राजनांदगांव, भोपाल, पखांजूर,
+                        कांकेर, सुकमा, महासमुंद, रामगढ़, जगदलपुर.
+                        <br /> <b>'डी'</b> कंपनी-गोलापल्ली, रायपुर, राजनंदगांव, चिचोला, साल्हेवारा, अंतागढ़, पखांजूर, ओरछा, रायपुर, बयानार.
+                        <br />
+                        <b>‘ई’</b> कंपनी-पीटीसीबोरगांव, सुकमा, पखांजूर, नारायणपुर, राणापाल, फरसगांव.<br />
+                        <b>‘एफ’</b> कंपनी-सुकमा, बिलासपुर, दुर्ग, जशपुर, साल्हेवारा, पु.मु. रायपुर, नारायणपुर में तैनात रही।
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- CLIENTS-AREA-END -->
+<!-- GALLERY-AREA-START -->
+
+
+
+<section class="blog-area blue-bg section-padding">
+    <div class="container" style="margin-top:-30px;">
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-4  wow fadeIn" data-wow-delay="0.3s">
+                <div class="sinlge-blog">
+
+                    <a href="#" title="we call of thieves">
+                        <h3>ज़िला बल के वेबसाईट</h3>
+                    </a>
+
+                    <div class="meta-content">
+                        <ul>
+                            <li class="views-row views-row-1 views-row-odd views-row-first">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="http://balodpolice.cg.gov.in/" target="_blank">
+                                            <span class="style38">बालोद</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="views-row views-row-5 views-row-odd">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="http://www.balodabazarpolice.in/" target="_blank" class="style38">बलौदा बाज़ार भाटापारा</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="views-row views-row-6 views-row-even">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="http://durgpolice.cg.gov.in/" target="_blank" class="style38">दुर्ग</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="views-row views-row-6 views-row-even">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="http://cg.nic.in/mahasamundpolice/" target="_blank" class="style38">महासमुंद</a><span class="style38">&nbsp;&nbsp;&nbsp; </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="views-row views-row-6 views-row-even">
+                                <div class="views-field views-field-title-field">
+                                    <div class="field-content">
+                                        <a href="http://kabirdhampolice.nic.in/" target="_blank" class="style38">कबीरधाम</a><span class="style38">&nbsp;&nbsp;&nbsp; </span>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+                        </ul>
+
+                        <a href="@Url.Action("DisttPoliceWebsite", "HomeHN")" target="_blank" class="btn" title="Read More">अधिक +<i class="fa fa-angle-double-right "></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-4  wow fadeIn" data-wow-delay="0.3s">
+                <div class="sinlge-blog">
+                    <a href="#" title="we call of thieves">
+                        <h3>सूचना पट्ट</h3>
+                    </a>
+
+                    <div class="meta-content">
+                        <div id="marqueecontainer" onmouseover="copyspeed=pausespeed" onmouseout="copyspeed=marqueespeed">
+                            <div id="vmarquee" style="position: absolute; width: 98%;">
+
+                                    <p class="style38">
+                                        <img src="~/images/newgif.gif" />&nbsp;&nbsp; <a href="#" target="_blank"> सूचना 1</a>
+                                    </p>
+
+                                <p class="style38">
+                                    <img src="~/images/newgif.gif" />&nbsp;&nbsp; <a href="#" target="_blank"> सूचना 2</a>
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4  wow fadeIn" data-wow-delay="0.3s">
+                <div class="sinlge-blog">
+
+                    <a href="#" title="we call of thieves">
+                        <h3>नया क्या</h3>
+                    </a>
+
+                    <div class="meta-content">
+                        <div id="marqueecontainer">
+                            
+                                <marquee direction="up" scrollamount="2">
+                                    <img src="~/images/newgif.gif" />&nbsp;&nbsp; <a href="#" target="_blank">सूचना 1</a>
+                                </marquee>
+
+                            <marquee direction="up" scrollamount="2">
+                                <img src="~/images/newgif.gif" />&nbsp;&nbsp; <a href="#" target="_blank"> सूचना 2 </a>
+                            </marquee>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<br />
+
+
+
+<!-- GALLERY-AREA-END -->
+<!-- SERVICES-AREA-START -->
+<!-- SERVICES-AREA-END -->
+<style type="text/css">
+    #marqueecontainer {
+        position: relative;
+        width: 300px; /*marquee width */
+        height: 200px; /*marquee height */
+        background-color: white;
+        overflow: hidden;
+        border: 1px solid black;
+        padding: 2px;
+        padding-left: 4px;
+    }
+</style>
+
+
+
+<script type="text/javascript">
+
+    var delayb4scroll = 1000 //Specify initial delay before marquee starts to scroll on page (2000=2 seconds)
+    var marqueespeed = 1 //Specify marquee scroll speed (larger is faster 1-10)
+    var pauseit = 1 //Pause marquee onMousever (0=no. 1=yes)?
+
+    ////NO NEED TO EDIT BELOW THIS LINE////////////
+
+    var copyspeed = marqueespeed
+    var pausespeed = (pauseit == 0) ? copyspeed : 0
+    var actualheight = ''
+
+    function scrollmarquee() {
+        if (parseInt(cross_marquee.style.top) > (actualheight * (-1) + 8)) //if scroller hasn't reached the end of its height
+            cross_marquee.style.top = parseInt(cross_marquee.style.top) - copyspeed + "px" //move scroller upwards
+        else //else, reset to original position
+            cross_marquee.style.top = parseInt(marqueeheight) + 8 + "px"
+    }
+
+    function initializemarquee() {
+        cross_marquee = document.getElementById("vmarquee")
+        cross_marquee.style.top = 0
+        marqueeheight = document.getElementById("marqueecontainer").offsetHeight
+        actualheight = cross_marquee.offsetHeight //height of marquee content (much of which is hidden from view)
+        if (window.opera || navigator.userAgent.indexOf("Netscape/7") != -1) { //if Opera or Netscape 7x, add scrollbars to scroll and exit
+            cross_marquee.style.height = marqueeheight + "px"
+            cross_marquee.style.overflow = "scroll"
+            return
+        }
+        setTimeout('lefttime=setInterval("scrollmarquee()",30)', delayb4scroll)
+    }
+
+    if (window.addEventListener)
+        window.addEventListener("load", initializemarquee, false)
+    else if (window.attachEvent)
+        window.attachEvent("onload", initializemarquee)
+    else if (document.getElementById)
+        window.onload = initializemarquee
+
+
+</script>
+
+
+
+
